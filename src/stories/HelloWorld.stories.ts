@@ -10,8 +10,17 @@ export default meta;
 
 type Story = StoryObj<typeof HelloWorld>;
 
-export const Base: Story = {
+export const Base: Story = {};
+
+export const Text: Story = {
   args: {
-    name: "World",
+    variant: "text",
+  },
+};
+
+export const ContainedSecondary: Story = {
+  args: {
+    variant: "contained",
+    color: "secondary",
   },
 };

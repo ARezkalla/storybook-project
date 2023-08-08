@@ -1,11 +1,17 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, ButtonProps } from "@mui/material";
 
-const HelloWorld = () => {
+const HelloWorld = ({ variant = "outlined", ...props }: ButtonProps) => {
   return (
     <div>
       <h1>Hello World</h1>
-      <Button variant="contained">click me</Button>
+      <Button
+        variant={variant}
+        color={props.color}
+        onClick={() => console.log("clicked")}
+      >
+        click me
+      </Button>
     </div>
   );
 };
