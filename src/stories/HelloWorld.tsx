@@ -5,7 +5,7 @@ const HelloWorld = () => {
   return (
     <div>
       <h1>Hello World</h1>
-      <Button></Button>
+      <Button variant="contained">click me</Button>
     </div>
   );
 };
